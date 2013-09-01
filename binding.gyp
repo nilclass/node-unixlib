@@ -3,8 +3,8 @@
     {
       "target_name": "unixlib",
       "include_dirs": [ "security/pam_appl.h" ],
-      "direct_dependent_settings": {
-        "linkflags": [ "-lpam" ]
+      "link_settings": {
+        "libraries": [ "-lpam" ]
       },
       "conditions": [
 		[ "OS=='win'", {
